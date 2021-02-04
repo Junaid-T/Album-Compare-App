@@ -3,28 +3,36 @@ import styled from "styled-components";
 
 const Container = styled.div`
   min-width: 300px;
-  height: 300px;
-  border: 2px solid grey;
+  height: 400px;
+  border: 3px solid white;
   border-radius: 5px;
   text-align: center;
   margin-right: 10%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 `;
 const Wrapper = styled.div`
-  height: 100px;
   width: 100%;
   display: flex;
-  align-items: center;
+  flex-grow: 1;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 600;
 `;
 const AlbumName = styled.div`
   width: 50%;
-  heigh: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 const AlbumPoints = styled.div`
   width: 50%;
-  heigh: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Points = (props) => {

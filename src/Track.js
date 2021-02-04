@@ -3,16 +3,23 @@ import styled from "styled-components";
 import { Draggable } from "react-beautiful-dnd";
 
 const Container = styled.div`
-  width: 100px;
-  height: 80px;
+  width: 50%;
+  height: 10%;
   border: 2px solid white;
   border-radius: 5px;
   text-align: center;
   background-color: ${(props) => props.color};
   margin-bottom: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
 `;
-const Title = styled.h3``;
-const Name = styled.p``;
+const Name = styled.p`
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 4px;
+`;
 
 const Track = (props) => {
   const trackData = props.data.tracks[props.id];
@@ -25,7 +32,6 @@ const Track = (props) => {
           ref={provided.innerRef}
           color={trackData.color}
         >
-          <Title />
           <Name>{trackData.content}</Name>
         </Container>
       )}

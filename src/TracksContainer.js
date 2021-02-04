@@ -11,19 +11,32 @@ const Container = styled.div`
 const Title = styled.h2`
   height: 10%;
   width: 100%;
-  border: 2px solid grey;
+  border: 3px solid white;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-bottom: 3%;
 `;
 
 const List = styled.div`
-  height: 80%;
+  height: 90%;
   width: 100%;
-  border: 2px solid grey;
+  border: 4px solid white;
+  border-radius: 5px;
+  padding: 1% 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const Column = (props) => {
